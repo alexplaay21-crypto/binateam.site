@@ -25,7 +25,8 @@
         { "ru": "Безопасность: автозаполнение берёт адрес сайта только из браузеров, поэтому приложение больше не может выдать себя за сайт и получить его пароль", "en": "Security: autofill takes a site address only from browsers, so an app can no longer pose as a site to get its password" },
         { "ru": "Безопасность: другие приложения не могут открыть «Мои данные» в sBoard с подставленным значением", "en": "Security: other apps can no longer open My data in sBoard with a value of their choice" },
         { "ru": "Клавиатура больше не падает до первой разблокировки после перезагрузки (до неё работает системная клавиатура)", "en": "The keyboard no longer fails before the first unlock after a restart (the system keyboard is used until then)" },
-        { "ru": "Китайский и японский ввод больше не копит открытые запросы к словарю", "en": "Chinese and Japanese input no longer piles up open dictionary queries" }
+        { "ru": "Китайский и японский ввод больше не копит открытые запросы к словарю", "en": "Chinese and Japanese input no longer piles up open dictionary queries" },
+        { "ru": "Предложение вставить одноразовый код показывается один раз: оно исчезает после вставки любым способом или нажатия любой клавиши, а код остаётся в буфере", "en": "The one-time code suggestion is shown once: it goes away once the code is pasted in any way or any key is pressed, and the code stays in the clipboard" }
       ]
     },
     {
