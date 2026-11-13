@@ -1,0 +1,23 @@
+{
+  "_comment": "Main settings of binateam.site. Languages: add a code to 'languages' and a text for it next to every 'ru'/'en' pair; missing texts fall back to 'default_language'.",
+  "domain": "https://binateam.site",
+  "name": "Bina Team",
+  "default_language": "ru",
+  "languages": ["ru", "en"],
+  "language_names": { "ru": "Русский", "en": "English" },
+  "email": "sboard.app@gmail.com",
+  "verification": { "google": "", "yandex": "", "bing": "" },
+  "github": {
+    "repo": "https://github.com/alexplaay21-crypto/binateam.site",
+    "issues": "https://github.com/alexplaay21-crypto/binateam.site/issues",
+    "discussions_enabled": false,
+    "discussions": "https://github.com/alexplaay21-crypto/binateam.site/discussions"
+  },
+  "documents_date": { "ru": "9 ноября 2026 г.", "en": "9 November 2026" },
+  "about": {
+    "_comment": "Facts about the team. Leave a value as null until it is known — empty facts are not shown.",
+    "founded": null,
+    "location": null,
+    "team_size": null
+  }
+}

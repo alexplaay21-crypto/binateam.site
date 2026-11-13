@@ -1,0 +1,472 @@
+{
+  "_comment": "Updates feed. Newest first is not required — the site sorts by date. product: an id from products.json or 'website'. category: release | feature | fix | website. features and fixes may be empty lists.",
+  "updates": [
+    {
+      "id": "sboard-1-2-7",
+      "date": "2026-11-13",
+      "product": "sboard",
+      "version": "1.2.7",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.2.7: проход по всей клавиатуре", "en": "sBoard 1.2.7: a pass over the whole keyboard" },
+      "description": { "ru": "Проверены набор на всех языках, голосовой ввод, буфер обмена, эмодзи, автозамена, плавающая клавиатура и предпросмотр темы, а затем весь проект: шифрование, синхронизация, автозаполнение и безопасность. Исправлено всё, что нашлось, и добавлены проверки, которые печатают в настоящее текстовое поле.", "en": "Typing in every language, voice input, the clipboard, emoji, auto-correction, the floating keyboard and the theme preview were checked, then the whole project: encryption, sync, autofill and security. Everything found is fixed, and new checks type into a real text field." },
+      "features": [
+        { "ru": "Автозамена исправляет частые английские опечатки, которые были в словаре как слова: becuase, recieve, beautifull и другие", "en": "Auto-correction fixes common English misspellings the dictionary held as words: becuase, recieve, beautifull and more" },
+        { "ru": "Предпросмотр темы показывает раскладку выбранного языка клавиатуры", "en": "The theme preview shows the layout of the selected keyboard language" }
+      ],
+      "fixes": [
+        { "ru": "Голосовой ввод: слова больше не повторяются, лишний пробел в начале и двойной пробел убраны, набранное слово не заменяется", "en": "Voice input: words are no longer repeated, no extra space at the start or double space, the word being typed is not replaced" },
+        { "ru": "Адреса e-mail и сайтов больше не «исправляются» (helo@gmial.com превращался в helo@goal.com)", "en": "E-mail and web addresses are no longer \"corrected\" (helo@gmial.com became helo@goal.com)" },
+        { "ru": "Подсказки иногда оставались от предыдущей буквы", "en": "Suggestions sometimes stayed from the previous letter" },
+        { "ru": "Shift иногда сбрасывался сам сразу после нажатия", "en": "Shift sometimes turned itself off right after it was pressed" },
+        { "ru": "Языки, добавленные быстро один за другим, иногда пропадали из списка", "en": "Languages added quickly one after another sometimes went missing from the list" },
+        { "ru": "Клавиатура меньше расходует память при переключении многих языков", "en": "The keyboard uses less memory when switching between many languages" },
+        { "ru": "Плавающая клавиатура после поворота экрана остаётся там, куда её передвинули", "en": "The floating keyboard stays where it was moved after the screen rotates" },
+        { "ru": "Кнопка «Вернуть» в панели редактирования переведена правильно", "en": "The Redo button of the editing panel is translated correctly" },
+        { "ru": "Безопасность: автозаполнение берёт адрес сайта только из браузеров, поэтому приложение больше не может выдать себя за сайт и получить его пароль", "en": "Security: autofill takes a site address only from browsers, so an app can no longer pose as a site to get its password" },
+        { "ru": "Безопасность: другие приложения не могут открыть «Мои данные» в sBoard с подставленным значением", "en": "Security: other apps can no longer open My data in sBoard with a value of their choice" },
+        { "ru": "Клавиатура больше не падает до первой разблокировки после перезагрузки (до неё работает системная клавиатура)", "en": "The keyboard no longer fails before the first unlock after a restart (the system keyboard is used until then)" },
+        { "ru": "Китайский и японский ввод больше не копит открытые запросы к словарю", "en": "Chinese and Japanese input no longer piles up open dictionary queries" }
+      ]
+    },
+    {
+      "id": "sboard-1-2-6",
+      "date": "2026-11-13",
+      "product": "sboard",
+      "version": "1.2.6",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.2.6: цифровая клавиатура в полях кодов и PIN", "en": "sBoard 1.2.6: the number keyboard in code and PIN fields" },
+      "description": { "ru": "В полях для цифр, телефонов, дат и паролей цифры больше не удерживаются как «набираемое слово», из-за которого многие поля кодов и PIN-кодов теряли или заменяли цифры. Все раскладки всех языков проверены во всех видах клавиатуры.", "en": "In digit, phone, date and password fields digits are no longer held as a \"word being typed\", which made many code and PIN fields lose or replace digits. Every layout of every language is checked in every kind of keyboard." },
+      "features": [
+        { "ru": "Каждый язык проверяется во всех видах клавиатуры: буквы, символы, цифры, телефон", "en": "Every language is checked in every kind of keyboard: letters, symbols, numbers, phone" }
+      ],
+      "fixes": [
+        { "ru": "Цифровая клавиатура иногда не печатала в полях кодов и PIN-кодов", "en": "The number keyboard sometimes did not type in code and PIN fields" },
+        { "ru": "Автоматический пробел после свайпа больше не попадает в следующее поле", "en": "The automatic space after a swipe no longer carries over into the next field" },
+        { "ru": "В полях цифр, телефонов и дат нет подсказок слов (код из сообщения по-прежнему предлагается)", "en": "No word suggestions in number, phone and date fields (a code from a message is still offered)" }
+      ]
+    },
+    {
+      "id": "sboard-1-2-5",
+      "date": "2026-11-13",
+      "product": "sboard",
+      "version": "1.2.5",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.2.5: цвет панели, прозрачный пробел, стекло своего цвета и свайп", "en": "sBoard 1.2.5: toolbar colour, a see-through space bar, glass in your colours and swipe" },
+      "description": { "ru": "Цвет панели инструментов теперь меняется и в стиле «Стекло», и поверх фото. Пробел стал таким же прозрачным, как остальные клавиши. Тёмное стекло окрашивается в выбранный цвет клавиш и контура.", "en": "The toolbar colour now changes in the Glass style and over a photo too. The space bar is as see-through as the other keys. Dark glass takes the chosen key and border colours." },
+      "features": [
+        { "ru": "Каждый цвет редактора проверяется на настоящей клавиатуре во всех стилях — с фото и без", "en": "Every colour of the editor is checked on the real keyboard in every style, with and without a photo" }
+      ],
+      "fixes": [
+        { "ru": "Цвет панели инструментов не менялся в стиле «Стекло» и поверх фото", "en": "The toolbar colour did not change in the Glass style and over a photo" },
+        { "ru": "Пробел оставался непрозрачным на стекле и поверх фото", "en": "The space bar stayed solid on glass and over a photo" },
+        { "ru": "Цвет клавиш и контура не влиял на тёмное стекло", "en": "The key and border colours did not affect dark glass" },
+        { "ru": "Свайп, начатый пока другой палец ещё на клавише (например, на пробеле), не распознавался и не рисовался", "en": "A swipe started while another finger was still on a key (such as space) was not recognised or drawn" },
+        { "ru": "Когда телефон на миг подтормаживал, обычный свайп иногда не засчитывался", "en": "When the phone stalled for a moment, a normal swipe was sometimes not recognised" }
+      ]
+    },
+    {
+      "id": "sboard-1-2-4",
+      "date": "2026-11-12",
+      "product": "sboard",
+      "version": "1.2.4",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.2.4: в редакторе тем — сама клавиатура", "en": "sBoard 1.2.4: the theme editor shows the keyboard itself" },
+      "description": { "ru": "Предпросмотр в редакторе тем теперь рисует сама клавиатура из той же темы, что она загружает, поэтому в редакторе и при наборе всё одинаково. Исправлены темы, которые клавиатура отбрасывала целиком.", "en": "The theme editor's preview is now drawn by the keyboard itself from the same theme it loads, so the editor and typing look the same. Themes the keyboard used to drop entirely are fixed." },
+      "features": [
+        { "ru": "Предпросмотр темы — настоящая клавиатура: те же клавиши, панель, подсказки, фото и шрифты", "en": "The theme preview is the real keyboard: the same keys, toolbar, hints, photo and fonts" },
+        { "ru": "«Своя» тема не пропадает, когда выбираешь готовую", "en": "\"Custom\" stays when a ready theme is picked" }
+      ],
+      "fixes": [
+        { "ru": "С формами «Гранёные», «Арка» и темой «Неон» клавиатура показывала стандартный вид вместо выбранной темы", "en": "With the Faceted and Arch shapes and the Neon theme the keyboard showed its built-in look instead of the chosen theme" },
+        { "ru": "Одна неподходящая настройка темы больше не сбрасывает всю тему", "en": "One unsuitable theme setting no longer resets the whole theme" }
+      ]
+    },
+    {
+      "id": "sboard-1-2-3",
+      "date": "2026-11-12",
+      "product": "sboard",
+      "version": "1.2.3",
+      "category": "feature",
+      "title": { "ru": "sBoard 1.2.3: новые темы клавиатуры, формы клавиш и рисунки свайпа", "en": "sBoard 1.2.3: new keyboard themes, key shapes and swipe drawings" },
+      "description": { "ru": "Редактор тем переделан: любое изменение делает тему своей, и клавиатура показывает ровно то, что видно в редакторе. Новые формы и стили клавиш, ещё пять готовых тем, сердечки, звёздочки и другие рисунки свайпа с толщиной и радугой.", "en": "The theme editor is rebuilt: any change makes the theme your own, and the keyboard shows exactly what the editor shows. New key shapes and styles, five more ready themes, hearts, stars and other swipe drawings with thickness and a rainbow." },
+      "features": [
+        { "ru": "Формы клавиш: лепесток, облачко, арка, гранёные и другие", "en": "Key shapes: petal, speech bubble, arch, faceted and more" },
+        { "ru": "Стиль «Объёмные» и готовые темы «Неон», «Сакура», «Океан», «Лес», «Кофе»", "en": "A \"Raised\" style and the ready themes Neon, Sakura, Ocean, Forest and Coffee" },
+        { "ru": "Рисунки свайпа: маркер, сердечки, звёздочки, искры, пузырьки; толщина и цвет «Радуга»", "en": "Swipe drawings: marker, hearts, stars, sparkles, bubbles; thickness and a rainbow colour" }
+      ],
+      "fixes": [
+        { "ru": "Клавиатура показывала другую тему, чем в редакторе (например, тёмные клавиши вместо светлого стекла на фото)", "en": "The keyboard showed a different theme than the editor (e.g. dark keys instead of light glass over a photo)" },
+        { "ru": "Последнее изменение темы терялось, если сразу выйти из редактора", "en": "The last theme change was lost when leaving the editor right away" }
+      ]
+    },
+    {
+      "id": "sboard-1-2-2",
+      "date": "2026-11-12",
+      "product": "sboard",
+      "version": "1.2.2",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.2.2: тема как в редакторе, смена языка свайпом и заглавные буквы", "en": "sBoard 1.2.2: the theme you edit, language switch by swipe and capital letters" },
+      "description": { "ru": "Клавиатура показывает ту же тему, что и редактор тем. Свайп по пробелу меняет язык, выключенный предиктивный ввод больше не показывает слова, а предложения начинаются с заглавной буквы в любом приложении.", "en": "The keyboard shows the same theme as the theme editor. A swipe on the space bar switches the language, predictive text that is off no longer shows words, and sentences start with a capital letter in any app." },
+      "features": [
+        { "ru": "Фото аккаунта на главном экране", "en": "The account picture on the Home screen" },
+        { "ru": "Кнопка «Выйти из аккаунта» в разделе «Вход и восстановление»", "en": "A \"Sign out of the account\" button in \"Login and recovery\"" },
+        { "ru": "Удержите подсказку, чтобы больше её не предлагать — даже слово из словаря", "en": "Touch and hold a suggestion to stop it being suggested, even a dictionary word" },
+        { "ru": "Тихий звук и короткая вибрация по умолчанию: 15 %", "en": "A quiet sound and a short vibration by default: 15 %" }
+      ],
+      "fixes": [
+        { "ru": "Клавиатура показывала другую тему, чем в редакторе", "en": "The keyboard showed a different theme than the editor" },
+        { "ru": "Свайп по пробелу не менял язык", "en": "A swipe on the space bar did not switch the language" },
+        { "ru": "Подсказки слов при выключенном предиктивном вводе", "en": "Word suggestions while predictive text was off" },
+        { "ru": "Заглавная буква в начале предложения там, где приложение её не просит", "en": "A capital letter at the start of a sentence where the app does not ask for one" },
+        { "ru": "На клавиатуре DEV нет ряда цифр", "en": "No number row on the DEV keyboard" }
+      ]
+    },
+    {
+      "id": "sboard-1-2-1",
+      "date": "2026-11-12",
+      "product": "sboard",
+      "version": "1.2.1",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.2.1: полное удаление, выход из аккаунта и след-ручка", "en": "sBoard 1.2.1: full deletion, sign-out and a pen-like swipe trail" },
+      "description": { "ru": "«Выйти из аккаунта» снова работает, «Удалить все данные» удаляет sPass и его копии во всех облаках, а при восстановлении можно начать заново с новым аккаунтом. След свайпа рисуется ровной линией, как ручкой, по всему пути.", "en": "\"Sign out of the account\" works again, \"Delete all data\" deletes sPass and its copies in every cloud, and a restore can start over with a new account. The swipe trail is an even, pen-like line along the whole path." },
+      "features": [
+        { "ru": "Удаление подтверждается словом «подтвердить»", "en": "Deleting is confirmed by typing \"confirm\"" },
+        { "ru": "Кнопка «Войти по Recovery Key» прямо на экране входа", "en": "A \"Sign in with the Recovery Key\" button right on the sign-in screen" },
+        { "ru": "Фото аккаунта Google или Dropbox в профиле", "en": "The Google or Dropbox account picture in Profile" },
+        { "ru": "Отключённое устройство видно 7 дней, затем исчезает; на нём sBoard выходит из всех облаков", "en": "An unlinked device is listed for 7 days, then disappears; sBoard on it signs out of every cloud" }
+      ],
+      "fixes": [
+        { "ru": "Кнопки в диалогах восстановления и выхода, которые не срабатывали", "en": "Buttons in the recovery and sign-out dialogs that did nothing" },
+        { "ru": "На пустой новой строке больше нет подсказок слов; между подсказками стало чуть больше места", "en": "No word suggestions on an empty new line; a little more room between suggestions" },
+        { "ru": "Исправленная опечатка больше не запоминается как слово", "en": "A corrected slip is no longer learned as a word" },
+        { "ru": "Компактный редактор тем и палитра цветов", "en": "A compact theme editor and colour picker" }
+      ]
+    },
+    {
+      "id": "sboard-1-2-0",
+      "date": "2026-11-12",
+      "product": "sboard",
+      "version": "1.2.0",
+      "category": "release",
+      "title": { "ru": "sBoard 1.2: вход без регистрации, умная автозамена и одна тема клавиатуры", "en": "sBoard 1.2: no sign-up at start, smarter auto-correction and one keyboard theme" },
+      "description": { "ru": "Приложение открывается сразу, без создания хранилища и без пароля для профиля. sPass создают или восстанавливают в профиле. Автозамена исправляет слова с несколькими опечатками и учитывает предыдущее слово, а тема клавиатуры больше не меняется вместе с темой телефона.", "en": "The app opens at once, without creating a vault and without a password for Profile. sPass is created or restored in Profile. Auto-correction fixes words with several typos and looks at the previous word, and the keyboard theme no longer changes with the phone's theme." },
+      "features": [
+        { "ru": "«Выйти из аккаунта» в восстановлении доступа: sPass удаляется только с этого телефона, копии в облаках остаются", "en": "\"Sign out of the account\" in account recovery: sPass is removed from this phone only, the cloud copies stay" },
+        { "ru": "Переключатель «Как у телефона» для стеклянных тем: тёмное стекло в тёмной теме телефона, светлое — в светлой", "en": "A \"Like the phone\" switch for the glass themes: dark glass in the phone's dark mode, light glass in light mode" },
+        { "ru": "Размер текста следует за системным: заголовки и кнопки растут умеренно, основной текст — почти как в системе, клавиши и вкладки — чуть-чуть", "en": "Text follows the system font size: titles and buttons grow moderately, body text almost as much as the system, keys and tabs only a little" },
+        { "ru": "Автозамена знает соседние клавиши раскладки каждого языка", "en": "Auto-correction knows the neighbouring keys of every language's layout" },
+        { "ru": "«Создать надёжный пароль» в автозаполнении при регистрации и смене пароля (не при входе): пароль сразу сохраняется в sPass", "en": "\"Create a strong password\" in autofill on sign-up and password change (not on sign-in): the password is saved to sPass at once" }
+      ],
+      "fixes": [
+        { "ru": "Предложения сохранить почту или номер больше не появляются в чатах, поиске и многострочных полях; «Не сейчас» отключает их в этом приложении", "en": "Offers to save an e-mail or number no longer appear in chats, search and multi-line fields; \"Not now\" turns them off in that app" },
+        { "ru": "Предложение сохранить пароль не появляется для PIN-кодов, системных экранов и уже сохранённых входов; есть «Не для этого приложения»", "en": "The save-password offer no longer appears for PINs, system screens and logins already saved; there is \"Not for this app\"" },
+        { "ru": "Тулбар не становился белым и прозрачным при тёмной клавиатуре на светлом телефоне", "en": "The toolbar no longer turns white and see-through with a dark keyboard on a light phone" },
+        { "ru": "Панель эмодзи берёт цвета темы клавиатуры; кнопки ABC и удаления без лишних рамок", "en": "The emoji panel takes the keyboard theme's colours; ABC and Delete have no stray boxes" },
+        { "ru": "След свайпа виден и при экономии энергии и выключенных анимациях", "en": "The swipe trail shows with battery saver and animations off too" },
+        { "ru": "В восстановлении по контрольным вопросам одна кнопка «Продолжить» вместо двух неактивных", "en": "Security-question recovery has one Continue button instead of two greyed-out ones" },
+        { "ru": "Коды из Telegram, WhatsApp, Gmail и SMS копируются надёжнее; старый код из истории чата больше не копируется повторно", "en": "Codes from Telegram, WhatsApp, Gmail and SMS are copied more reliably; an old code from the chat history is no longer copied again" },
+        { "ru": "Предложение вставить скопированное показывается одно, без подсказок слов, и исчезает после вставки или любой клавиши", "en": "The paste offer is shown alone, without word suggestions, and disappears after pasting or any key" }
+      ]
+    },
+    {
+      "id": "sboard-1-1-9",
+      "date": "2026-11-12",
+      "product": "sboard",
+      "version": "1.1.9",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.1.9: карту добавляют через NFC, паспорт — камерой", "en": "sBoard 1.1.9: cards are added over NFC, passports by camera" },
+      "description": { "ru": "Убрано чтение банковской карты камерой: оно дублировало NFC и ошибалось на бликах. Карту добавляют прикладыванием к телефону, на телефоне без NFC — вручную. Сканер паспорта остался без изменений.", "en": "Reading a bank card with the camera was removed: it duplicated NFC and misread glare. A card is added by holding it to the phone, or by hand on a phone without NFC. The passport scanner is unchanged." },
+      "features": [],
+      "fixes": [
+        { "ru": "Исправлена формулировка про словари: экономия 35 → 21 МБ была в оперативной памяти, а не в размере приложения", "en": "Fixed the wording about dictionaries: the 35 → 21 MB saving was in RAM, not in the app size" }
+      ]
+    },
+    {
+      "id": "sboard-1-1-8",
+      "date": "2026-11-11",
+      "product": "sboard",
+      "version": "1.1.8",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.1.8: подсказка вставки по центру, стеклянные эмодзи и переводчик, меньше памяти", "en": "sBoard 1.1.8: a centred paste suggestion, glass emoji and translator, less memory" },
+      "description": { "ru": "Найдена настоящая причина, по которой текст подсказки вставки уезжал вниз: в теме у неё были отступы 12 dp сверху и снизу. Теперь подсказка по центру. В стеклянной теме эмодзи, GIF, переводчик и поиск лежат на матовом стекле, сами эмодзи не меняются. Кнопки в меню «⋯» стали компактнее. Словари занимают на треть меньше памяти, а кэши освобождаются, когда Android просит память.", "en": "The real reason the paste suggestion text slid down was found: the theme gave it 12 dp of padding above and below. It is centred now. With the glass theme, emoji, GIFs, the translator and search sit on frosted glass; the emoji themselves are unchanged. The buttons in the “⋯” menu are more compact. Dictionaries use a third less memory, and caches are released when Android asks for memory." },
+      "features": [
+        { "ru": "Стеклянные эмодзи, GIF, переводчик и поиск", "en": "Glass emoji, GIFs, translator and search" },
+        { "ru": "Компактные кнопки в меню «⋯»", "en": "Compact buttons in the “⋯” menu" },
+        { "ru": "Кнопка настроек клавиатуры в Android открывает sBoard; лишние экраны и темы ядра удалены; Release.apk стал на 17 МБ меньше (60 МБ вместо 78)", "en": "Android's keyboard settings button opens sBoard; unused engine screens and themes were removed; Release.apk is 17 MB smaller (60 MB instead of 78)" }
+      ],
+      "fixes": [
+        { "ru": "Подсказка вставки стояла ниже центра", "en": "The paste suggestion sat below the centre" },
+        { "ru": "Стиль темы не обновлялся после обновления приложения", "en": "The theme style was not rebuilt after an app update" },
+        { "ru": "Словари в оперативной памяти (русский и английский) занимали около 35 МБ, теперь около 21 МБ; размер приложения от этого не менялся", "en": "Dictionaries in RAM (Russian and English) took about 35 MB, now about 21 MB; the app's download size is not affected by this" },
+        { "ru": "Коды из уведомлений: отсев служебных уведомлений и повторов", "en": "Codes from notifications: service notifications and repeats are skipped" }
+      ]
+    },
+    {
+      "id": "sboard-1-1-7",
+      "date": "2026-11-11",
+      "product": "sboard",
+      "version": "1.1.7",
+      "category": "feature",
+      "title": { "ru": "sBoard 1.1.7: 240 языков перевода, свой сервис перевода, новый поиск эмодзи", "en": "sBoard 1.1.7: 240 translation languages, your own translation service, a new emoji search" },
+      "description": { "ru": "Переводчик знает все языки Google и работает с выбранным сервисом: Google, MyMemory, Google Cloud, Microsoft, DeepL, Yandex или своим сервером LibreTranslate — каждый показывает только свои языки. Язык перевода выбирается из компактного списка на месте клавиш. Поиск эмодзи встаёт на место панели и больше не занимает пол-экрана. Буфер, эмодзи и меню повторяют стиль темы, включая стекло.", "en": "The translator knows every Google language and works with the service you choose: Google, MyMemory, Google Cloud, Microsoft, DeepL, Yandex or your own LibreTranslate server, each showing only its languages. The translation language is picked from a compact list in place of the keys. The emoji search takes the toolbar's place and no longer covers half the screen. The clipboard, emoji and menus follow the theme's style, glass included." },
+      "features": [
+        { "ru": "Все 240 языков Google в переводчике", "en": "All 240 Google languages in the translator" },
+        { "ru": "Google Cloud, Microsoft, DeepL, Yandex со своим ключом и LibreTranslate со своим сервером", "en": "Google Cloud, Microsoft, DeepL, Yandex with your key and LibreTranslate with your server" },
+        { "ru": "Список языков перевода на месте клавиш, в цветах темы", "en": "The translation language list in place of the keys, in the theme's colours" },
+        { "ru": "Панели в стиле клавиш: стекло, контур, подсветка, фото", "en": "Panels styled like the keys: glass, outline, glow, photo" }
+      ],
+      "fixes": [
+        { "ru": "Поиск эмодзи занимал больше половины экрана", "en": "The emoji search took more than half the screen" },
+        { "ru": "Клавиатура по умолчанию 98 % высоты, панель инструментов чуть ниже", "en": "The keyboard is 98 % high by default, the toolbar slightly lower" }
+      ]
+    },
+    {
+      "id": "sboard-1-1-6",
+      "date": "2026-11-11",
+      "product": "sboard",
+      "version": "1.1.6",
+      "category": "feature",
+      "title": { "ru": "sBoard 1.1.6: рисунки и цвет свайпа, буфер на 100 записей", "en": "sBoard 1.1.6: swipe drawings and colour, a 100-item clipboard" },
+      "description": { "ru": "След свайпа теперь можно выбрать: линия, неон, точки, радуга, комета или без рисунка, в цвете темы или в своём цвете. Буфер хранит до 100 записей, закреплённые не удаляются, а закрепляются и удаляются долгим нажатием. Подсказка вставки показывает одну строку целыми словами. Экран sPass и набор текста стали легче для процессора.", "en": "The swipe trail can now be chosen: line, neon, dots, rainbow, comet or no drawing, in the theme colour or your own. The clipboard keeps up to 100 items, pinned ones are never removed, and pinning and deleting is done with a long press. The paste suggestion shows one line of whole words. The sPass screen and typing use less processor time." },
+      "features": [
+        { "ru": "Рисунки свайпа и свой цвет — «Тема и цвета» → «Форма»", "en": "Swipe drawings and your own colour in “Theme and colours” → “Shape”" },
+        { "ru": "Буфер до 100 записей, закрепление долгим нажатием", "en": "A clipboard of up to 100 items, pinned with a long press" },
+        { "ru": "Меню буфера переведено на все языки", "en": "The clipboard menu is translated into every language" }
+      ],
+      "fixes": [
+        { "ru": "Текст подсказки вставки уходил за край", "en": "The paste suggestion text ran past the edge" },
+        { "ru": "Удалённые сверх лимита фото оставались в памяти телефона", "en": "Photos removed over the limit stayed in the phone's storage" }
+      ]
+    },
+    {
+      "id": "sboard-1-1-5",
+      "date": "2026-11-11",
+      "product": "sboard",
+      "version": "1.1.5",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.1.5: подтверждение удаления, быстрее GIF и NFC, имя с карты", "en": "sBoard 1.1.5: confirmed deletion, faster GIFs and NFC, the holder name from the card" },
+      "description": { "ru": "Удаление паролей, карт и других записей теперь подтверждается отпечатком или мастер-паролем. Контрольные вопросы видны при восстановлении всегда. GIF открываются быстрее, карта по NFC читается надёжнее и вместе с именем владельца, если банк записал его на чип. Текст подсказки вставки стоит по центру, а доступ к фото для скриншотов можно включить прямо в буфере.", "en": "Deleting passwords, cards and other items is now confirmed with a fingerprint or the master password. Security questions are always shown when restoring. GIFs open faster, NFC card reading is more reliable and also reads the holder name when the bank stored it on the chip. The paste suggestion text is centred, and photo access for screenshots can be turned on right in the clipboard." },
+      "features": [
+        { "ru": "Удаление записей подтверждается отпечатком или мастер-паролем", "en": "Deleting items is confirmed with a fingerprint or the master password" },
+        { "ru": "Имя владельца карты по NFC, если оно есть на чипе", "en": "The card holder name over NFC when it is on the chip" },
+        { "ru": "Калькулятор и конвертер — в настройках «Панель над клавишами»", "en": "Calculator and converter settings moved to “Bar above the keys”" },
+        { "ru": "Обновлённые документы и инструкции в репозитории", "en": "Updated documentation and guides in the repository" }
+      ],
+      "fixes": [
+        { "ru": "Текст подсказки вставки был смещён вниз", "en": "The paste suggestion text was shifted down" },
+        { "ru": "Контрольные вопросы не показывались при восстановлении", "en": "Security questions were not shown when restoring" },
+        { "ru": "GIF долго открывались", "en": "GIFs took long to open" },
+        { "ru": "NFC и камера долго читали карту", "en": "NFC and the camera took long to read a card" }
+      ]
+    },
+    {
+      "id": "sboard-1-1-4",
+      "date": "2026-11-11",
+      "product": "sboard",
+      "version": "1.1.4",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.1.4: скриншоты в буфере в одно касание, текст в подсказках не обрезается", "en": "sBoard 1.1.4: screenshots in the clipboard in one tap, suggestion text is never cut" },
+      "description": { "ru": "В буфере клавиатуры появилась кнопка «Разрешить»: после неё новые скриншоты сразу попадают в буфер и предлагаются на панели. Текст в подсказке вставки больше не смещается и не обрезается — он уменьшается, если не помещается.", "en": "The keyboard clipboard now has an “Allow” button: after it, new screenshots go straight into the clipboard and are offered on the toolbar. The text of the paste suggestion no longer shifts or gets cut; it shrinks when it does not fit." },
+      "features": [
+        { "ru": "Разрешение для скриншотов прямо из буфера клавиатуры", "en": "The screenshot permission right from the keyboard clipboard" }
+      ],
+      "fixes": [
+        { "ru": "Текст в подсказке вставки смещался и обрезался", "en": "The paste suggestion text shifted and was cut off" }
+      ]
+    },
+    {
+      "id": "sboard-1-1-3",
+      "date": "2026-11-11",
+      "product": "sboard",
+      "version": "1.1.3",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.1.3: клавиатура не увеличивается вместе с системным шрифтом", "en": "sBoard 1.1.3: the keyboard no longer grows with the system font" },
+      "description": { "ru": "Клавиатура больше не растёт от крупного системного шрифта: надписи на панели и в подсказках всегда помещаются. Размер букв клавиатуры меняется в её настройках (раздел «Размер шрифта клавиш» и «Размер букв» в теме). Само приложение следует системному шрифту до 130 %.", "en": "The keyboard no longer grows with a large system font, so labels on the toolbar and in suggestions always fit. The keyboard's text size is set in its own settings (\"Key font size\" and \"Letter size\" in the theme). The app itself follows the system font up to 130%." },
+      "features": [
+        { "ru": "Размер шрифта клавиатуры не зависит от системного (предел 100 %), меняется в настройках клавиатуры", "en": "The keyboard's font size does not depend on the system one (limit 100%); set it in the keyboard settings" }
+      ],
+      "fixes": []
+    },
+    {
+      "id": "sboard-1-1-2",
+      "date": "2026-11-11",
+      "product": "sboard",
+      "version": "1.1.2",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.1.2: крупный системный шрифт и разовое предложение из буфера", "en": "sBoard 1.1.2: large system font and a one-time clipboard offer" },
+      "description": { "ru": "При большом системном шрифте надписи на панели клавиатуры и в подсказках больше не обрезаются: размер текста растёт вместе с системным, но до предела (клавиатура — 115 %, приложение — 130 %). Скопированное и скриншот предлагаются один раз и пропадают, как только вы начали печатать; позже их можно вставить из буфера.", "en": "With a large system font, labels on the keyboard toolbar and in suggestions are no longer cut off: text grows with the system size up to a limit (keyboard 115%, app 130%). A copied item or a screenshot is offered once and disappears as soon as you start typing; you can still paste it later from the clipboard." },
+      "features": [
+        { "ru": "Предел размера шрифта: надписи в клавиатуре и приложении всегда помещаются", "en": "A font size limit: labels in the keyboard and the app always fit" },
+        { "ru": "Предложение из буфера показывается один раз и пропадает после набора текста", "en": "The clipboard offer is shown once and disappears after typing" }
+      ],
+      "fixes": [
+        { "ru": "Слова в подсказках и на панели обрезались наполовину при крупном шрифте", "en": "Words in suggestions and on the toolbar were cut in half with a large font" }
+      ]
+    },
+    {
+      "id": "sboard-1-1-1",
+      "date": "2026-11-10",
+      "product": "sboard",
+      "version": "1.1.1",
+      "category": "fix",
+      "title": { "ru": "sBoard 1.1.1: надёжное восстановление, корзина на 7 дней и скриншоты в буфере", "en": "sBoard 1.1.1: reliable recovery, a 7-day trash and screenshots in the clipboard" },
+      "description": { "ru": "Мастер-пароль снова главный: сменить его без старого можно только Recovery Key, а если забыли и его — контрольными вопросами вместе с телефоном или облачной копией. Отпечаток и вход в облако больше не позволяют задать новый пароль. Удалённые пароли больше не возвращаются из второго облака, «Удалить все данные» действительно стирает всё, а в sPass можно выбрать все записи и удалить разом.", "en": "The master password matters again: without the old one it can be changed only with the Recovery Key or, if that is forgotten too, security questions together with the phone or the cloud copy. A fingerprint or a cloud sign-in no longer lets anyone set a new password. Deleted passwords no longer come back from a second cloud, “Delete all data” really erases everything, and sPass can select all items and delete them at once." },
+      "features": [
+        { "ru": "Восстановление: мастер-пароль, Recovery Key, а если забыли оба — контрольные вопросы", "en": "Recovery: the master password, the Recovery Key and, if both are forgotten, security questions" },
+        { "ru": "«Выбрать все» и удаление нескольких записей сразу", "en": "“Select all” and deleting several items at once" },
+        { "ru": "Недавно удалённые хранятся 7 дней, потом исчезают навсегда", "en": "Recently deleted items are kept for 7 days, then disappear for good" },
+        { "ru": "Если в облаке уже есть хранилище, sBoard сразу предлагает объединить пароли", "en": "If the cloud already has a vault, sBoard offers to merge the passwords right away" },
+        { "ru": "Скриншоты сразу появляются в буфере клавиатуры (по желанию)", "en": "Screenshots appear in the keyboard clipboard right away (optional)" },
+        { "ru": "Заметный след свайпа на любой теме", "en": "A clearly visible swipe trail on every theme" }
+      ],
+      "fixes": [
+        { "ru": "Новый мастер-пароль можно было задать одним отпечатком или входом в облако", "en": "A new master password could be set with just a fingerprint or a cloud sign-in" },
+        { "ru": "Удалённые пароли возвращались из второго облака и потом исчезали сами", "en": "Deleted passwords came back from a second cloud and then vanished by themselves" },
+        { "ru": "«Удалить все данные» не стирало хранилище и просило мастер-пароль, которого уже нет", "en": "“Delete all data” did not erase the vault and asked for a master password that no longer existed" },
+        { "ru": "Предложение вставить фото не исчезало после вставки", "en": "The offer to paste a photo did not go away after pasting" },
+        { "ru": "Видео больше не попадают в буфер клавиатуры", "en": "Videos no longer go into the keyboard clipboard" }
+      ]
+    },
+    {
+      "id": "sboard-1-1",
+      "date": "2026-11-10",
+      "product": "sboard",
+      "version": "1.1.0",
+      "category": "release",
+      "title": { "ru": "sBoard 1.1: переезд через любое облако, буфер с фото и новая панель", "en": "sBoard 1.1: moving through any cloud, a clipboard with photos and a new toolbar" },
+      "description": { "ru": "На новом телефоне выберите «У меня уже есть sBoard» и войдите в любое подключённое облако — вернутся пароли, настройки клавиатуры, темы, выученные слова и остальные облака. Клавиатура получила новую панель с кнопкой «⋯» и буфер обмена с фото, а sPass — сохранение карт и личных данных из форм.", "en": "On a new phone choose “I already have sBoard” and sign in to any connected cloud: passwords, keyboard settings, themes, learned words and the other clouds come back. The keyboard gets a new toolbar with a “⋯” button and a clipboard with photos, and sPass now saves cards and personal data from forms." },
+      "features": [
+        { "ru": "Восстановление из Google Drive, Dropbox или WebDAV вместе с настройками, темами, словами и списком облаков", "en": "Restoring from Google Drive, Dropbox or WebDAV together with settings, themes, words and the list of clouds" },
+        { "ru": "Основное облако и необязательное восстановление через аккаунт облака", "en": "A primary cloud and optional recovery through the cloud account" },
+        { "ru": "Новая панель инструментов: закреплённая «⋯», перетаскивание кнопок и скрытые действия", "en": "A new toolbar: a pinned “⋯”, drag-and-drop buttons and hidden actions" },
+        { "ru": "Буфер обмена с фото: скопированное сразу появляется на панели", "en": "A clipboard with photos: what you copy shows right on the toolbar" },
+        { "ru": "Поиск эмодзи на всех языках клавиатуры", "en": "Emoji search in every keyboard language" },
+        { "ru": "Автозаполнение сразу показывает подходящие аккаунты, пароль — после отпечатка", "en": "Autofill shows matching accounts right away, the password after the fingerprint" },
+        { "ru": "sPass предлагает сохранить банковские карты и личные данные из форм", "en": "sPass offers to save bank cards and personal data from forms" },
+        { "ru": "Коды из SMS и мессенджеров на многих языках — первой подсказкой на клавиатуре", "en": "Codes from SMS and messengers in many languages, shown as the first keyboard suggestion" },
+        { "ru": "Семь слайдов знакомства и плавные переходы между экранами", "en": "Seven intro slides and smooth transitions between screens" }
+      ],
+      "fixes": [
+        { "ru": "После выхода из аккаунта Google копия в облаке больше не пропадает («Хранилище не найдено»)", "en": "Signing out of Google no longer loses the cloud copy (“Vault not found”)" },
+        { "ru": "След свайпа больше не обрывается на быстрых движениях", "en": "The swipe trail no longer breaks off on fast strokes" },
+        { "ru": "Подсказка из буфера обмена появляется и в непустых полях", "en": "The clipboard suggestion also appears in fields that already have text" },
+        { "ru": "Клавиатура и синхронизация меньше расходуют батарею", "en": "The keyboard and sync use less battery" }
+      ]
+    },
+    {
+      "id": "sboard-1-0-cloud-restore",
+      "date": "2026-11-09",
+      "product": "sboard",
+      "version": "1.0.0",
+      "category": "feature",
+      "title": { "ru": "Восстановление из любого облака и переводы на 50 языков", "en": "Restore from any cloud and translations into 50 languages" },
+      "description": { "ru": "На новом телефоне sPass теперь восстанавливается не только из Google Drive, но и из Dropbox и WebDAV. Все тексты интерфейса переведены на каждый встроенный язык.", "en": "On a new phone sPass now restores not only from Google Drive but also from Dropbox and WebDAV. Every interface text is translated into every bundled language." },
+      "features": [
+        { "ru": "Восстановление хранилища из Dropbox и WebDAV при первом запуске", "en": "Restoring the vault from Dropbox and WebDAV on first start" },
+        { "ru": "Полные переводы интерфейса на 50 языков", "en": "Complete interface translations into 50 languages" }
+      ],
+      "fixes": [
+        { "ru": "В армянском переводе «Профиль» больше не совпадает со словом «паспорт»", "en": "In Armenian, “Profile” no longer reads as “passport”" }
+      ]
+    },
+    {
+      "id": "sboard-1-0",
+      "date": "2026-11-09",
+      "product": "sboard",
+      "version": "1.0.0",
+      "category": "release",
+      "title": { "ru": "sBoard 1.0", "en": "sBoard 1.0" },
+      "description": { "ru": "Первая стабильная версия: новая иконка, проверка безопасности перед выпуском и политика конфиденциальности на английском.", "en": "The first stable version: a new icon, a security review before release and an English Privacy Policy." },
+      "features": [
+        { "ru": "Новая иконка приложения", "en": "New app icon" },
+        { "ru": "Политика конфиденциальности и условия на английском", "en": "Privacy Policy and Terms in English" }
+      ],
+      "fixes": [
+        { "ru": "След свайпа иногда не рисовался", "en": "The swipe trail was sometimes not drawn" },
+        { "ru": "Автокопирование кодов больше не копирует промокоды", "en": "Code auto-copy no longer copies promo codes" },
+        { "ru": "Панель перевода не открывается в полях паролей", "en": "The translation bar no longer opens in password fields" },
+        { "ru": "Защита от слишком больших архивов при импорте", "en": "Protection against oversized archives on import" },
+        { "ru": "Убран OneDrive — остаются Google Drive, Dropbox и WebDAV", "en": "OneDrive removed — Google Drive, Dropbox and WebDAV remain" }
+      ]
+    },
+    {
+      "id": "sboard-0-9-speed",
+      "date": "2026-11-09",
+      "product": "sboard",
+      "version": "0.9.0",
+      "category": "feature",
+      "title": { "ru": "Свайп на всех языках и словари до 150 тысяч слов", "en": "Swipe in every language and dictionaries of up to 150k words" },
+      "description": { "ru": "Свайп-набор работает во всех раскладках, словари стали больше, а приложение запускается легче.", "en": "Swipe typing works in every layout, dictionaries got bigger and the app starts lighter." },
+      "features": [
+        { "ru": "Свайп-набор во всех языках", "en": "Swipe typing in every language" },
+        { "ru": "Словари до 150 000 слов", "en": "Dictionaries of up to 150,000 words" }
+      ],
+      "fixes": [
+        { "ru": "Слова после свайпа появляются быстрее", "en": "Words appear faster after a swipe" },
+        { "ru": "Тема больше не меняется после запуска", "en": "The theme no longer changes after start" },
+        { "ru": "APK устанавливается на большем числе телефонов", "en": "The APK installs on more phones" }
+      ]
+    },
+    {
+      "id": "sboard-0-9-scanner",
+      "date": "2026-11-08",
+      "product": "sboard",
+      "version": "0.9.0",
+      "category": "feature",
+      "title": { "ru": "Сканер карт, восстановление «2 из 5» и поддержка разработки", "en": "Card scanner, two-of-five recovery and supporting development" },
+      "description": { "ru": "Карты и паспорта распознаются камерой прямо в приложении, мастер-пароль можно восстановить любыми двумя способами из пяти, а разработку — поддержать через Google Play.", "en": "Cards and passports are recognised by the camera right in the app, the master password can be recovered with any two of five methods, and development can be supported through Google Play." },
+      "features": [
+        { "ru": "Живой сканер карт и паспортов", "en": "Live card and passport scanner" },
+        { "ru": "Восстановление доступа любыми двумя способами из пяти", "en": "Access recovery with any two of five methods" },
+        { "ru": "Фон клавиатуры из своего фото, флаги у раскладок", "en": "Your own photo as the keyboard background, flags on layouts" },
+        { "ru": "Фильтр нецензурных слов в подсказках", "en": "Swear-word filter in suggestions" }
+      ],
+      "fixes": [
+        { "ru": "Сканер падал при закрытии", "en": "The scanner crashed on close" },
+        { "ru": "Клавиатура закрывала поля ввода", "en": "The keyboard covered input fields" }
+      ]
+    },
+    {
+      "id": "sboard-0-4",
+      "date": "2026-11-07",
+      "product": "sboard",
+      "version": "0.4.0",
+      "category": "feature",
+      "title": { "ru": "Импорт из других менеджеров и Центр безопасности", "en": "Import from other managers and the Security Center" },
+      "description": { "ru": "Шаблоны записей, импорт из популярных менеджеров паролей, проверка слабых и утёкших паролей и инструменты в клавиатуре.", "en": "Entry templates, import from popular password managers, a checkup for weak and leaked passwords and tools in the keyboard." },
+      "features": [
+        { "ru": "Шаблоны: банковский счёт, паспорт, права, Wi-Fi и другие", "en": "Templates: bank account, passport, licence, Wi-Fi and more" },
+        { "ru": "Импорт из других менеджеров паролей", "en": "Import from other password managers" },
+        { "ru": "Центр безопасности: слабые, повторяющиеся и утёкшие пароли", "en": "Security Center: weak, reused and leaked passwords" },
+        { "ru": "Калькулятор, конвертер валют и быстрые фразы в клавиатуре", "en": "Calculator, currency converter and quick phrases in the keyboard" }
+      ],
+      "fixes": []
+    },
+    {
+      "id": "sboard-first",
+      "date": "2026-11-07",
+      "product": "sboard",
+      "version": "0.3.0",
+      "category": "release",
+      "title": { "ru": "Первые версии sBoard", "en": "The first versions of sBoard" },
+      "description": { "ru": "Клавиатура и зашифрованное хранилище sPass с синхронизацией через Google Drive, автозаполнением и ключами доступа.", "en": "The keyboard and the encrypted sPass vault with Google Drive sync, autofill and passkeys." },
+      "features": [
+        { "ru": "Зашифрованное хранилище паролей", "en": "Encrypted password vault" },
+        { "ru": "Автозаполнение и ключи доступа (passkeys)", "en": "Autofill and passkeys" },
+        { "ru": "Синхронизация через Google Drive", "en": "Sync through Google Drive" }
+      ],
+      "fixes": []
+    },
+    {
+      "id": "website-launch",
+      "date": "2026-11-09",
+      "product": "website",
+      "version": null,
+      "category": "website",
+      "title": { "ru": "Запуск binateam.site", "en": "binateam.site launched" },
+      "description": { "ru": "У Bina Team появился собственный сайт: продукты, обновления, дорожная карта, статус сервисов и сообщество.", "en": "Bina Team now has its own website: products, updates, roadmap, service status and community." },
+      "features": [],
+      "fixes": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+name: Website
+
+# Builds binateam.site from website/ and publishes it to GitHub Pages (this repository is public;
+# the sBoard app's own repository is private).
+# Editing a JSON file in website/data/ on GitHub (updates, roadmap, status, products) is enough:
+# this workflow rebuilds and republishes the site.
+# One-time repository setup: Settings → Pages → Source: GitHub Actions, Custom domain: binateam.site, Enforce HTTPS.
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'website/**'
+      - 'scripts/build_site.py'
+      - 'PRIVACY.md'
+      - 'TERMS.md'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the site and check its links
+        run: python3 scripts/build_site.py --check
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

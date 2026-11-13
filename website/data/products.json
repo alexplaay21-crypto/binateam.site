@@ -1,0 +1,97 @@
+{
+  "_comment": "Product catalog. Add a product here and it gets a card in /products/, a page at its 'path', search entries and a place in updates and roadmap filters. type: app | game. status: released | beta | in-development | planned. Leave google_play as null until the listing is live and checked. screenshots: files in website/assets/products/<id>/, e.g. \"screens/1.webp\", or {\"file\": {\"ru\": …, \"en\": …}, \"alt\": {…}} for a picture per language (languages without one show the English picture).",
+  "featured": "sboard",
+  "products": [
+    {
+      "id": "sboard",
+      "path": "sboard/",
+      "type": "app",
+      "status": "released",
+      "platform": { "ru": "Android 8.0 и новее", "en": "Android 8.0 or newer" },
+      "version": "1.2.1",
+      "price": { "ru": "Бесплатно", "en": "Free" },
+      "icon": "assets/products/sboard/icon.png",
+      "name": { "ru": "sBoard", "en": "sBoard" },
+      "tagline": {
+        "ru": "Клавиатура и менеджер паролей sPass в одном приложении",
+        "en": "A keyboard and the sPass password manager in one app"
+      },
+      "description": {
+        "ru": "sBoard — клавиатура для Android со свайп-набором, переводчиком и голосовым вводом. Внутри — менеджер паролей sPass: пароли, банковские карты, документы и коды 2FA хранятся зашифрованными на телефоне. Без рекламы, без слежки и без своих серверов.",
+        "en": "sBoard is an Android keyboard with swipe typing, a translator and voice input. Inside is the sPass password manager: passwords, bank cards, documents and 2FA codes are kept encrypted on the phone. No ads, no tracking and no servers of our own."
+      },
+      "download": "https://github.com/alexplaay21-crypto/binateam.site/releases/latest",
+      "google_play": null,
+      "source": null,
+      "support": "support/#sboard",
+      "screenshots": [
+        { "file": { "ru": "screens/ru/01.webp", "en": "screens/en/01.webp" }, "alt": { "ru": "Пароли, карты, документы и коды 2FA", "en": "Passwords, cards, IDs and 2FA codes" } },
+        { "file": { "ru": "screens/ru/02.webp", "en": "screens/en/02.webp" }, "alt": { "ru": "Автозаполнение прямо из клавиатуры", "en": "Autofill right from the keyboard" } },
+        { "file": { "ru": "screens/ru/03.webp", "en": "screens/en/03.webp" }, "alt": { "ru": "Свайп-набор и умные подсказки", "en": "Swipe typing and smart suggestions" } },
+        { "file": { "ru": "screens/ru/04.webp", "en": "screens/en/04.webp" }, "alt": { "ru": "Темы, стекло и своё фото", "en": "Themes, glass and your own photo" } },
+        { "file": { "ru": "screens/ru/05.webp", "en": "screens/en/05.webp" }, "alt": { "ru": "Перевод прямо во время набора", "en": "Translate while you type" } },
+        { "file": { "ru": "screens/ru/06.webp", "en": "screens/en/06.webp" }, "alt": { "ru": "Центр безопасности: утечки и слабые пароли", "en": "Security Center: leaks and weak passwords" } },
+        { "file": { "ru": "screens/ru/07.webp", "en": "screens/en/07.webp" }, "alt": { "ru": "Зашифрованная копия в вашем облаке", "en": "Encrypted backup in your own cloud" } },
+        { "file": { "ru": "screens/ru/08.webp", "en": "screens/en/08.webp" }, "alt": { "ru": "Надёжные пароли за секунду", "en": "Strong passwords in a second" } }
+      ],
+      "documents": {
+        "privacy": { "source": "PRIVACY.md", "ru_heading": "## Политика конфиденциальности", "en_heading": "## Privacy Policy" },
+        "terms": { "source": "TERMS.md", "ru_heading": "## Условия использования", "en_heading": "## Terms of Use" }
+      },
+      "facts": [
+        { "value": "50", "ru": "языков интерфейса", "en": "interface languages" },
+        { "value": "45", "ru": "словарей для набора", "en": "typing dictionaries" },
+        { "value": "3", "ru": "способа вернуть доступ", "en": "ways to get access back" },
+        { "value": "0", "ru": "своих серверов", "en": "servers of our own" }
+      ],
+      "feature_groups": [
+        {
+          "title": { "ru": "Клавиатура", "en": "Keyboard" },
+          "items": [
+            { "icon": "swipe", "title": { "ru": "Свайп и умные подсказки", "en": "Swipe typing and smart suggestions" },
+              "text": { "ru": "Проведите по буквам — слово появится само. Подсказки учатся вашим словам.", "en": "Slide over the letters and the word appears. Suggestions learn your words." } },
+            { "icon": "globe", "title": { "ru": "Десятки раскладок", "en": "Dozens of layouts" },
+              "text": { "ru": "Словари для 45 языков, флаги у раскладок, переключение пробелом или глобусом.", "en": "Dictionaries for 45 languages, a flag on every layout, switch with the space bar or the globe key." } },
+            { "icon": "translate", "title": { "ru": "Переводчик в клавиатуре", "en": "Translator in the keyboard" },
+              "text": { "ru": "Пишите на своём языке — отправляйте на языке собеседника.", "en": "Write in your language and send in theirs." } },
+            { "icon": "mic", "title": { "ru": "Голосовой ввод", "en": "Voice input" },
+              "text": { "ru": "Диктуйте с расстановкой знаков препинания.", "en": "Dictate with punctuation." } },
+            { "icon": "sparkle", "title": { "ru": "Жидкое стекло", "en": "Liquid glass" },
+              "text": { "ru": "Готовые темы, своё фото фоном, цвет и форма каждой клавиши.", "en": "Ready themes, your own photo as background, colour and shape of every key." } },
+            { "icon": "tools", "title": { "ru": "Инструменты над клавишами", "en": "Tools above the keys" },
+              "text": { "ru": "Калькулятор, конвертер валют, буфер обмена с фото, быстрые фразы и GIF. Кнопки можно переставить.", "en": "Calculator, currency converter, a clipboard with photos, quick phrases and GIFs. The buttons can be rearranged." } }
+          ]
+        },
+        {
+          "title": { "ru": "Менеджер паролей sPass", "en": "sPass password manager" },
+          "items": [
+            { "icon": "lock", "title": { "ru": "Пароли, карты, документы, 2FA", "en": "Passwords, cards, documents, 2FA" },
+              "text": { "ru": "Шифрование AES-256-GCM, ключ выводится из мастер-пароля через Argon2id.", "en": "AES-256-GCM encryption with a key derived from the master password using Argon2id." } },
+            { "icon": "finger", "title": { "ru": "Автозаполнение по отпечатку", "en": "Autofill with your fingerprint" },
+              "text": { "ru": "Вход в приложения и на сайты в одно касание — прямо из клавиатуры.", "en": "Sign in to apps and sites with one tap, right from the keyboard." } },
+            { "icon": "buoy", "title": { "ru": "Доступ не потеряется", "en": "Access you won't lose" },
+              "text": { "ru": "Мастер-пароль, Recovery Key, а если забыли оба — контрольные вопросы вместе с телефоном или облачной копией.", "en": "The master password, the Recovery Key and, if you forget both, security questions together with the phone or the cloud copy." } },
+            { "icon": "scan", "title": { "ru": "Карты за секунду", "en": "Cards in a second" },
+              "text": { "ru": "Паспорта — камерой, банковские карты — через NFC. Распознавание прямо на телефоне.", "en": "Passports by camera, bank cards over NFC. Recognised right on the phone." } },
+            { "icon": "cloud", "title": { "ru": "Своё облако", "en": "Your own cloud" },
+              "text": { "ru": "Зашифрованная копия в Google Drive, Dropbox или WebDAV — для всех ваших устройств.", "en": "An encrypted copy in Google Drive, Dropbox or WebDAV for all your devices." } },
+            { "icon": "import", "title": { "ru": "Переезд без потерь", "en": "Move in without losses" },
+              "text": { "ru": "Импорт из KeePass, Bitwarden, 1Password и CSV; проверка слабых и утёкших паролей.", "en": "Import from KeePass, Bitwarden, 1Password and CSV; a checkup for weak and leaked passwords." } }
+          ]
+        }
+      ],
+      "faq": [
+        { "q": { "ru": "Это правда бесплатно?", "en": "Is it really free?" },
+          "a": { "ru": "Да. Все функции открыты и рекламы нет. Пожертвования через Google Play добровольные и ничего не открывают.", "en": "Yes. Every feature is open and there are no ads. Donations through Google Play are voluntary and unlock nothing." } },
+        { "q": { "ru": "Где хранятся мои пароли?", "en": "Where are my passwords kept?" },
+          "a": { "ru": "В зашифрованной базе на телефоне. Если вы включите облачную копию, она шифруется ещё до отправки — облако видит только зашифрованный файл.", "en": "In an encrypted database on the phone. If you turn on a cloud copy, it is encrypted before upload — the cloud only sees an encrypted file." } },
+        { "q": { "ru": "Что, если я забуду мастер-пароль?", "en": "What if I forget the master password?" },
+          "a": { "ru": "Откройте sPass Recovery Key — его можно создать в Профиль → «Вход и восстановление». Если забыли и его, помогут контрольные вопросы: ответы работают вместе с этим телефоном или копией в облаке, поэтому одних угаданных ответов мало. Без этих способов восстановить нельзя — так работает сквозное шифрование.", "en": "Open sPass with the Recovery Key — create it in Profile → Login and recovery. If you forget that too, security questions help: the answers work together with this phone or the cloud copy, so guessed answers alone are not enough. Without these it cannot be recovered — that is how end-to-end encryption works." } },
+        { "q": { "ru": "Клавиатура видит, что я печатаю?", "en": "Does the keyboard see what I type?" },
+          "a": { "ru": "Набранный текст не сохраняется и никуда не отправляется. В полях паролей и в режиме инкогнито обучение выключено. В интернет уходят только перевод, голос и поиск GIF — когда вы ими пользуетесь.", "en": "Typed text is not stored or sent anywhere. Learning is off in password fields and incognito mode. Only translation, voice and GIF search go online — when you use them." } },
+        { "q": { "ru": "Какие облака поддерживаются?", "en": "Which clouds are supported?" },
+          "a": { "ru": "Google Drive, Dropbox и любой WebDAV — например Nextcloud, Яндекс Диск, pCloud или Koofr.", "en": "Google Drive, Dropbox and any WebDAV — for example Nextcloud, Yandex Disk, pCloud or Koofr." } }
+      ]
+    }
+  ]
+}

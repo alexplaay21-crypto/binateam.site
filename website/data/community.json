@@ -1,0 +1,11 @@
+{
+  "_comment": "Community categories. Each becomes a link that opens a new GitHub issue with the tag in its title, and a search for issues with that tag. Issue forms live in .github/ISSUE_TEMPLATE/.",
+  "categories": [
+    { "tag": "keyboard", "icon": "swipe", "name": { "ru": "Клавиатура", "en": "Keyboard" } },
+    { "tag": "spass", "icon": "lock", "name": { "ru": "sPass и пароли", "en": "sPass and passwords" } },
+    { "tag": "sync", "icon": "cloud", "name": { "ru": "Синхронизация", "en": "Sync" } },
+    { "tag": "languages", "icon": "globe", "name": { "ru": "Языки и перевод", "en": "Languages and translation" } },
+    { "tag": "design", "icon": "sparkle", "name": { "ru": "Оформление", "en": "Design" } },
+    { "tag": "website", "icon": "doc", "name": { "ru": "Сайт", "en": "Website" } }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "_comment": "Roadmap. status: planned | in-progress | completed | on-hold. eta: free text or null when unknown. product: an id from products.json or 'website'.",
+  "items": [
+    {
+      "id": "google-play",
+      "product": "sboard",
+      "category": { "ru": "Распространение", "en": "Distribution" },
+      "status": "in-progress",
+      "eta": null,
+      "title": { "ru": "Публикация sBoard в Google Play", "en": "Publishing sBoard on Google Play" },
+      "description": { "ru": "Сборка для магазина, иконка и документы готовы. Осталось оформить страницу приложения и пройти проверку Google Play.", "en": "The store build, the icon and the documents are ready. The store listing and the Google Play review remain." }
+    },
+    {
+      "id": "screenshots",
+      "product": "sboard",
+      "category": { "ru": "Сайт", "en": "Website" },
+      "status": "completed",
+      "eta": "2026-11-11",
+      "title": { "ru": "Скриншоты sBoard", "en": "sBoard screenshots" },
+      "description": { "ru": "Скриншоты главных функций на сайте и для страницы в Google Play, на русском и английском.", "en": "Screenshots of the main features on the website and for the Google Play listing, in Russian and English." }
+    },
+    {
+      "id": "sboard-1-1",
+      "product": "sboard",
+      "category": { "ru": "Выпуск", "en": "Release" },
+      "status": "completed",
+      "eta": "2026-11-10",
+      "title": { "ru": "sBoard 1.1", "en": "sBoard 1.1" },
+      "description": { "ru": "Переезд через любое облако вместе с настройками, новая панель клавиатуры, буфер с фото, сохранение карт и личных данных.", "en": "Moving through any cloud with settings included, a new keyboard toolbar, a clipboard with photos, saving cards and personal data." }
+    },
+    {
+      "id": "multi-cloud-restore",
+      "product": "sboard",
+      "category": { "ru": "Синхронизация", "en": "Sync" },
+      "status": "completed",
+      "eta": "2026-11-09",
+      "title": { "ru": "Восстановление из Dropbox и WebDAV", "en": "Restore from Dropbox and WebDAV" },
+      "description": { "ru": "Новый телефон восстанавливает хранилище из любого подключённого облака.", "en": "A new phone restores the vault from any connected cloud." }
+    },
+    {
+      "id": "translations",
+      "product": "sboard",
+      "category": { "ru": "Языки", "en": "Languages" },
+      "status": "completed",
+      "eta": "2026-11-09",
+      "title": { "ru": "Интерфейс на 50 языках", "en": "Interface in 50 languages" },
+      "description": { "ru": "Все тексты приложения переведены на каждый встроенный язык.", "en": "Every app text is translated into every bundled language." }
+    },
+    {
+      "id": "sboard-1-0",
+      "product": "sboard",
+      "category": { "ru": "Выпуск", "en": "Release" },
+      "status": "completed",
+      "eta": "2026-11-09",
+      "title": { "ru": "sBoard 1.0", "en": "sBoard 1.0" },
+      "description": { "ru": "Первая стабильная версия после проверки безопасности.", "en": "The first stable version after a security review." }
+    },
+    {
+      "id": "website",
+      "product": "website",
+      "category": { "ru": "Сайт", "en": "Website" },
+      "status": "completed",
+      "eta": "2026-11-09",
+      "title": { "ru": "Официальный сайт binateam.site", "en": "The official binateam.site website" },
+      "description": { "ru": "Продукты, обновления, дорожная карта, статус сервисов и сообщество в одном месте.", "en": "Products, updates, roadmap, service status and community in one place." }
+    }
+  ]
+}

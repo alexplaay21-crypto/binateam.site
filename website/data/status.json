@@ -1,0 +1,31 @@
+{
+  "_comment": "Service status, updated by hand — there is no automatic monitoring. status: operational | degraded | partial-outage | major-outage | maintenance. Add incidents newest first; each needs date, status, title and text.",
+  "updated": "2026-11-09",
+  "services": [
+    {
+      "id": "website",
+      "status": "operational",
+      "name": { "ru": "Сайт binateam.site", "en": "binateam.site website" },
+      "description": { "ru": "Сайт на GitHub Pages", "en": "The website on GitHub Pages" }
+    },
+    {
+      "id": "sboard-download",
+      "status": "operational",
+      "name": { "ru": "Загрузка sBoard", "en": "sBoard downloads" },
+      "description": { "ru": "Файлы APK в релизах GitHub", "en": "APK files in GitHub releases" }
+    },
+    {
+      "id": "support",
+      "status": "operational",
+      "name": { "ru": "Поддержка по e-mail", "en": "E-mail support" },
+      "description": { "ru": "Ответы на письма", "en": "Replies to e-mails" }
+    },
+    {
+      "id": "community",
+      "status": "operational",
+      "name": { "ru": "Сообщество на GitHub", "en": "Community on GitHub" },
+      "description": { "ru": "Идеи и сообщения об ошибках в GitHub Issues", "en": "Ideas and bug reports in GitHub Issues" }
+    }
+  ],
+  "incidents": []
+}

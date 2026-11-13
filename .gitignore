@@ -1,0 +1,4 @@
+# Built site (scripts/build_site.py); GitHub Actions builds it on deploy.
+_site/
+__pycache__/
+.DS_Store
